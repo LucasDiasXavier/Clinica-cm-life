@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'source sans pro', sans-serif;
+}
+
+main{
+
+    color: #0000008c;
+    margin-bottom: 60px;
+   
+}
+
+.topo{
+
+    width: 100%;
+    background-color: #00cad1;
+    
+}
+
+.container{
+
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.topo, .container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    
+}
+
+.topo-logo{
+
+    height: 60px;
+}
+
+.topo-logo:hover{
+
+    opacity: 0.5;
+}
+
+.topo-links{
+
+    display: flex;
+}
+
+.topo-links a{
+
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.topo-links a:hover{
+
+    opacity: 0.7;
+    color: #004b4c;
+}
+
+@media(max-width: 425px){
+
+    .topo, .container{
+
+        flex-direction: column;
+    }
+
+    .topo-links{
+
+        width: 100%;
+        border-top: 1px solid #009fa5;
+        justify-content: space-around;
+    }
+
+    .topo-logo{
+
+        margin: 0 10px;
+    }
+}
+
+.box-visao-geral{
+
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.visao-geral-titulo{
+
+    color: #fff;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+}
+
+.visao-geral-titulo h1{
+
+    font-size: 38px;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media(max-width: 425px){
+
+    .box-visao-geral{
+
+        height: 200px;
+    }
+
+    .visao-geral-titulo{
+
+        padding-top: 60px;
+        
+    }
+
+    .visao-geral-titulo h1{
+
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 768){
+
+    .box-visao-geral{
+
+        height: 300px;
+    }
+}
+
+@media(max-width: 1024px){
+
+    .box-visao-geral{
+
+        height: 500px;
+    }
+}
+
+#sobre, #especialidades{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre, #especialidades, #contatos{
+
+    padding: 40px 20px 0;
+    
+}
+
+.container-titulo{
+
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container-titulo h2, .container-titulo h3{
+
+    margin: 0;
+}
+
+.box-sobre{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.box-sobre h3{
+
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box-sobre img{
+
+    height: 250px;
+}
+
+
+@media(max-width: 425px){
+
+    .box-sobre img{
+
+        width: auto;
+    }
+}
+
+@media(max-width: 768px){
+
+    .box-sobre img{
+
+        display: none;
+    }
+}
+
+.box-especialidades{
+
+    display: flex;
+    gap: 20px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.box-especialidades figure{
+
+    background-color: #fff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    overflow: hidden; 
+    width: 250px; 
+    text-align: center; 
+}
+
+.box-especialidades img {
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.box-especialidades figcaption {
+    padding: 15px; 
+    text-transform: uppercase; 
+    font-weight: 600;
+    color: #888; 
+}
+
+/* @media(max-width :425px){
+
+    .box-especialidades{
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+} */
+
+@media(max-width: 768px){
+
+    .box-especialidades{
+
+        justify-content: center;
+        
+    }
+
+    .box-especialidades figure{
+
+        width: calc(100% / 2 - 40px)
+    }
+}
+
+.box-link-horarios{
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-horario{
+
+    background-color: #00cad1;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.link-horario:hover{
+
+    opacity: 0.7;
+    color: #004b4c;
+}
+
+#contatos div{
+
+    margin: 0 auto;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 32px;
+    
+}
+
+#contatos p{
+
+    
+    margin: 0 auto;
+}
+
+
+
+footer{
+
+    background-color: #0d6e71;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.rodape{
+
+    text-align: center;
+}
+
+.rodape img{
+
+    height: 60px;
+}
+
+.rodape p{
+
+    line-height: 32px;
+}
+
+
+
+
