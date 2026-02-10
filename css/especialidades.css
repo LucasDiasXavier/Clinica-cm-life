@@ -29,14 +29,6 @@ h1{
     font-size: 25px;
 }
 
-@media(max-width: 425px){
-
-    h1{
-
-        font-size: 18px;
-    }
-}
-
 .secao-especialidade{
 
     margin-top: 40px;
@@ -116,12 +108,36 @@ h1{
   padding: 10px;
 }
 
-@media(max-width: 425px){
 
-    .box-tabela-especialidade{
+@media ( max-width: 425px) {
 
-        
-        
+    .tabela-especialidade{
 
+        width: 100%;
     }
+
+    .box-tabela-especialidade img{
+
+        display: none;
+    }
+
+    .especialidade-item p{
+
+        width: 100vw;
+    }
+}
+
+@media (max-width: 768px) {
+  .box-tabela-especialidade img {
+    display: none;
+  }
+
+  .tabela-especialidade {
+    width: 100%;
+  }
+
+  .box-tabela-especialidade {
+    height: auto;
+    justify-content: center;
+  }
 }

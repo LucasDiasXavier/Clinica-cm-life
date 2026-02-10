@@ -70,26 +70,6 @@ main{
     color: #004b4c;
 }
 
-@media(max-width: 425px){
-
-    .topo, .container{
-
-        flex-direction: column;
-    }
-
-    .topo-links{
-
-        width: 100%;
-        border-top: 1px solid #009fa5;
-        justify-content: space-around;
-    }
-
-    .topo-logo{
-
-        margin: 0 10px;
-    }
-}
-
 .box-visao-geral{
 
     width: 100%;
@@ -113,41 +93,6 @@ main{
     font-size: 38px;
     margin: 0;
     font-weight: 500;
-}
-
-@media(max-width: 425px){
-
-    .box-visao-geral{
-
-        height: 200px;
-    }
-
-    .visao-geral-titulo{
-
-        padding-top: 60px;
-        
-    }
-
-    .visao-geral-titulo h1{
-
-        font-size: 26px;
-    }
-}
-
-@media(max-width: 768){
-
-    .box-visao-geral{
-
-        height: 300px;
-    }
-}
-
-@media(max-width: 1024px){
-
-    .box-visao-geral{
-
-        height: 500px;
-    }
 }
 
 #sobre, #especialidades{
@@ -194,22 +139,6 @@ main{
 }
 
 
-@media(max-width: 425px){
-
-    .box-sobre img{
-
-        width: auto;
-    }
-}
-
-@media(max-width: 768px){
-
-    .box-sobre img{
-
-        display: none;
-    }
-}
-
 .box-especialidades{
 
     display: flex;
@@ -243,29 +172,8 @@ main{
     color: #888; 
 }
 
-/* @media(max-width :425px){
 
-    .box-especialidades{
 
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-} */
-
-@media(max-width: 768px){
-
-    .box-especialidades{
-
-        justify-content: center;
-        
-    }
-
-    .box-especialidades figure{
-
-        width: calc(100% / 2 - 40px)
-    }
-}
 
 .box-link-horarios{
 
@@ -328,6 +236,68 @@ footer{
 .rodape p{
 
     line-height: 32px;
+}
+
+@media(max-width: 425px){
+
+    .topo, .container{
+
+        flex-direction: column;
+    }
+
+    .topo-links{
+
+        width: 100%;
+        border-top: 1px solid #009fa5;
+        justify-content: space-around;
+    }
+
+    .topo-logo{
+
+        margin: 0 10px;
+    }
+
+    .box-visao-geral{
+
+        height: 200px;
+    }
+
+    .visao-geral-titulo h1{
+
+        font-size: 28px;
+        margin: 50px 0;
+    }
+
+    .box-especialidades{
+
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+
+    .box-visao-geral{
+
+        height: 300px;
+    }
+
+    .box-sobre img{
+
+        display: none;
+    }
+
+    .box-especialidades{
+
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1024px){
+
+    .box-visao-geral{
+
+        height: 400px;
+    }
 }
 
 
